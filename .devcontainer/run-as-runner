@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export GH_CONFIG_DIR="/etc/runner-secrets/gh"
+cd /workspace
+cmd="${1:-}"; shift || true
+case "$cmd" in
+  auth)        exec gh auth login "$@" ;;
+  auth-status) exec gh auth status ;;
+  setup-git)   exec gh auth setup-git ;;
+  create)      exec gh repo create "$@" ;;
+  push)        git config --global --add safe.directory /workspace; gh auth setup-git; exec git push "$@" ;;
+  serve)       exec npx --yes serve -l 3000 . ;;
+  *) echo "runx: '$cmd' is not allowed" >&2; exit 1 ;;
+esac

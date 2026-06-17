@@ -1,0 +1,16 @@
+{
+  "name": "jesusrevglobal",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "dev",
+  "forwardPorts": [3000],
+  "remoteEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/dev/.claude-config"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode"]
+    }
+  }
+}

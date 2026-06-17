@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace:cached
+      - ${HOME}/secrets/jesusrevglobal/gh:/etc/runner-secrets/gh
+      - ${HOME}/secrets/jesusrevglobal/claude:/home/dev/.claude-config
