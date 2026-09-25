@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use — Jesus Revolution Global</title>
+  <meta name="description" content="Terms of Use for the Jesus Revolution Global website." />
+  <meta name="theme-color" content="#f1ebdf" />
+  <meta name="color-scheme" content="light" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f1ebdf'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23842d26' stroke-width='1.4'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='13' font-weight='700' text-anchor='middle' fill='%23211a16'%3EJR%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,420;9..144,560;9..144,640&display=swap" />
+
+  <style>
+    :root {
+      --paper:   #f1ebdf;
+      --paper-2: #e9e1d1;
+      --ink:     #211a16;
+      --ink-2:   #4f463e;
+      --accent:  #842d26;
+      --line:    rgba(33,26,22,.16);
+      --line-2:  rgba(33,26,22,.10);
+      --display: "Fraunces", Georgia, "Times New Roman", serif;
+      --text: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --col: 40rem;
+      --ease: cubic-bezier(.2, .7, .2, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      min-height: 100svh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--text);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(2.25rem, 7vw, 5rem) 1.5rem clamp(1.5rem, 4vw, 3rem);
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .5;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: var(--col);
+      flex: 1 0 auto;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .8125rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      text-decoration: none;
+      margin-bottom: clamp(1.75rem, 5vw, 2.5rem);
+      transition: color .18s var(--ease);
+    }
+    .back:hover { color: var(--accent); }
+    .back svg { width: .7rem; height: .7rem; }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 640;
+      font-optical-sizing: auto;
+      font-size: clamp(2.1rem, 8vw, 3rem);
+      line-height: 1;
+      letter-spacing: -.012em;
+      text-wrap: balance;
+    }
+
+    .updated {
+      margin-top: .85rem;
+      font-size: .8125rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+    }
+
+    .rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .85rem;
+      margin: clamp(1.75rem, 5vw, 2.5rem) auto clamp(1.5rem, 4vw, 2rem);
+      color: var(--accent);
+    }
+    .rule::before, .rule::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+    }
+    .rule b { width: 5px; height: 5px; background: currentColor; transform: rotate(45deg); }
+
+    h2 {
+      font-family: var(--display);
+      font-weight: 560;
+      font-size: 1.3rem;
+      letter-spacing: -.005em;
+      margin: clamp(1.75rem, 4vw, 2.25rem) 0 .65rem;
+    }
+
+    p, li { color: var(--ink-2); }
+    p + p { margin-top: .85rem; }
+
+    a.inline { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+    a.inline:hover { border-color: var(--accent); }
+
+    ul { margin: .65rem 0 0 1.15rem; }
+    li { margin-bottom: .4rem; }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: var(--col);
+      margin-top: clamp(2.5rem, 7vw, 4rem);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: .75rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+    }
+    footer a { color: var(--ink-2); text-decoration: none; transition: color .18s var(--ease); }
+    footer a:hover { color: var(--accent); }
+    footer .sep { margin: 0 .5rem; color: var(--line); }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4 6 8l4 4"/></svg>
+      Back
+    </a>
+
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: September 17, 2026</p>
+
+    <div class="rule" aria-hidden="true"><b></b></div>
+
+    <main>
+      <p>Welcome to Jesus Revolution Global. These Terms of Use (the "Terms") govern your access to and use of this website and its content (the "Site"). By visiting or using the Site, you agree to these Terms. If you do not agree, please do not use the Site.</p>
+
+      <h2>1. Who we are</h2>
+      <p>This Site is operated by Jesus Revolution Global ("we," "us," or "our"). It serves as a directory of our official presences and links to our channels across Watchman Wire, Instagram, TikTok, X, Facebook, and other platforms.</p>
+
+      <h2>2. Use of the Site</h2>
+      <p>You may use the Site for lawful, personal, and non-commercial purposes. You agree not to:</p>
+      <ul>
+        <li>Use the Site in any way that violates applicable laws or regulations;</li>
+        <li>Attempt to gain unauthorized access to the Site, its servers, or connected systems;</li>
+        <li>Interfere with or disrupt the operation, security, or availability of the Site;</li>
+        <li>Copy, reproduce, or redistribute Site content except as permitted below or by law.</li>
+      </ul>
+
+      <h2>3. Intellectual property</h2>
+      <p>Unless otherwise noted, the content on this Site — including text, graphics, logos, marks, and design — is owned by or licensed to Jesus Revolution Global and is protected by applicable intellectual property laws. The "Jesus Revolution Global" and "Watchman Wire" names and logos are our marks. You may not use them without our prior written permission, except to link to us in an accurate, non-misleading way.</p>
+
+      <h2>4. Third-party links and platforms</h2>
+      <p>The Site links to third-party platforms and websites, including social media services. We do not control and are not responsible for the content, policies, or practices of those third parties. Your use of any third-party service is governed by that service's own terms and privacy policy. We encourage you to review them.</p>
+
+      <h2>5. No professional advice</h2>
+      <p>Content on the Site and our channels is provided for general informational and educational purposes and reflects our perspective. It is not intended as legal, financial, medical, or other professional advice, and should not be relied upon as such.</p>
+
+      <h2>6. Disclaimer of warranties</h2>
+      <p>The Site is provided "as is" and "as available," without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Site will be uninterrupted, error-free, or free of harmful components.</p>
+
+      <h2>7. Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, Jesus Revolution Global and its affiliates, volunteers, and representatives will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss arising out of or related to your use of, or inability to use, the Site.</p>
+
+      <h2>8. Changes to these Terms</h2>
+      <p>We may update these Terms from time to time. When we do, we will revise the "Last updated" date above. Your continued use of the Site after changes take effect constitutes acceptance of the revised Terms.</p>
+
+      <h2>9. Contact</h2>
+      <p>Questions about these Terms? Reach us through any of our official channels linked on the <a class="inline" href="index.html">home page</a>.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>
+      <a href="terms.html">Terms of Use</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+    <p style="margin-top:.55rem">&copy; 2026 Jesus Revolution Global</p>
+  </footer>
+</body>
+</html>

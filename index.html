@@ -219,6 +219,14 @@
       text-transform: uppercase;
       color: var(--ink-2);
     }
+    footer .legal { margin-bottom: .55rem; }
+    footer .legal a {
+      color: var(--ink-2);
+      text-decoration: none;
+      transition: color .18s var(--ease);
+    }
+    footer .legal a:hover { color: var(--accent); }
+    footer .legal span { margin: 0 .5rem; color: var(--line); }
 
     /* ---------- Focus & motion ---------- */
     a:focus-visible {
@@ -258,23 +266,6 @@
            ============================================================ -->
       <nav aria-label="Jesus Revolution Global links">
         <ul class="links">
-
-          <!-- Watchman Wire -->
-          <li>
-            <a href="https://www.watchmanwire.com/">
-              <span class="icon" aria-hidden="true">
-                <!-- flame / lamp, a nod to Watchman Wire -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3c.6 3 3.5 4.2 3.5 7.5A3.5 3.5 0 0 1 12 14a3.5 3.5 0 0 1-3.5-3.5C8.5 8 10.5 7 12 3Z"/>
-                  <path d="M12 14c2.5 0 4.5 1.8 4.5 4v0a.9.9 0 0 1-.9.9H8.4a.9.9 0 0 1-.9-.9v0c0-2.2 2-4 4.5-4Z"/>
-                </svg>
-              </span>
-              <span class="label">Watchman Wire</span>
-              <span class="meta"><span class="handle">watchmanwire.com</span>
-                <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
-              </span>
-            </a>
-          </li>
 
           <!-- Instagram -->
           <li>
@@ -339,6 +330,23 @@
             </a>
           </li>
 
+          <!-- Watchman Wire -->
+          <li>
+            <a href="https://www.watchmanwire.com/">
+              <span class="icon" aria-hidden="true">
+                <!-- flame / lamp, a nod to Watchman Wire -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3c.6 3 3.5 4.2 3.5 7.5A3.5 3.5 0 0 1 12 14a3.5 3.5 0 0 1-3.5-3.5C8.5 8 10.5 7 12 3Z"/>
+                  <path d="M12 14c2.5 0 4.5 1.8 4.5 4v0a.9.9 0 0 1-.9.9H8.4a.9.9 0 0 1-.9-.9v0c0-2.2 2-4 4.5-4Z"/>
+                </svg>
+              </span>
+              <span class="label">Watchman Wire</span>
+              <span class="meta"><span class="handle">watchmanwire.com</span>
+                <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+              </span>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- ============================ END LINKS ============================ -->
@@ -346,6 +354,11 @@
   </div>
 
   <footer>
+    <p class="legal">
+      <a href="terms.html">Terms of Use</a>
+      <span aria-hidden="true">·</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
     <p>&copy; 2026 Jesus Revolution Global</p>
   </footer>
 </body>
