@@ -1,0 +1,8 @@
+# Local-only secrets for `wrangler dev` (copy to `.dev.vars`, which is gitignored).
+# In production these are set with `wrangler secret put` — never commit real values.
+
+# The jrsm app's production URL, no trailing slash (the APP, NOT jesusrevolution.global).
+JRSM_ORIGIN="https://your-jrsm-app.vercel.app"
+
+# The 64-char hex secret that matches REEL_PROXY_SECRET in the jrsm Vercel env.
+REEL_PROXY_SECRET="replace-with-the-shared-secret"
